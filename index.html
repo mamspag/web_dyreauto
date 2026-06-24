@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dyreauto - Servicio Mecánico Especializado</title>
+    <meta name="description" content="Taller mecánico Dyreauto. Mantenimiento, reparación, división diesel, gasolina, gas y atención a flotillas. Diagnóstico avanzado.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Outfit:wght@400;700;900&display=swap" rel="stylesheet">
+    <!-- AOS Animation CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Model Viewer -->
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.3.0/model-viewer.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <!-- FontAwesome para íconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <img src="dyreauto-logo.png?v=2" alt="Dyreauto Logo">
+            </a>
+            <ul class="nav-links">
+                <li><a href="#historia">Nosotros</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#flotillas">Flotillas</a></li>
+                <li><a href="#contacto" class="btn-primary-small">Agenda tu Cita</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-bg"></div>
+        <div class="container hero-container">
+            <div class="hero-content" data-aos="fade-right" data-aos-duration="1000">
+                <span class="badge">Atención Premium</span>
+                <h1>El cuidado que tu vehículo <span>merece</span></h1>
+                <p>Especialistas en mecánica general, diesel, gasolina y gas. Diagnóstico por computadora y equipo de vanguardia para mantenerte en el camino.</p>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <h3>100%</h3>
+                        <span>Garantía</span>
+                    </div>
+                    <div class="stat">
+                        <h3>24/7</h3>
+                        <span>Soporte Flotillas</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-form-wrapper" id="contacto" data-aos="fade-left" data-aos-duration="1200">
+                <div class="glass-form" data-tilt data-tilt-max="5" data-tilt-speed="400" data-tilt-glare="true" data-tilt-max-glare="0.2">
+                    <h2>Cotiza o Agenda ahora</h2>
+                    <p>Déjanos tus datos y un asesor especializado te contactará en breve.</p>
+                    <form id="lead-form">
+                        <div class="input-group">
+                            <i class="fa-solid fa-user"></i>
+                            <input type="text" id="nombre" placeholder="Nombre completo" required>
+                        </div>
+                        <div class="input-group">
+                            <i class="fa-solid fa-phone"></i>
+                            <input type="tel" id="telefono" placeholder="Teléfono a 10 dígitos" required>
+                        </div>
+                        <div class="input-group">
+                            <i class="fa-solid fa-envelope"></i>
+                            <input type="email" id="correo" placeholder="Correo electrónico" required>
+                        </div>
+                        <div class="input-group">
+                            <i class="fa-solid fa-car"></i>
+                            <input type="text" id="vehiculo" placeholder="Marca y modelo del vehículo" required>
+                        </div>
+                        <div class="input-group">
+                            <i class="fa-solid fa-wrench"></i>
+                            <select id="servicio" required>
+                                <option value="" disabled selected>Servicio de interés</option>
+                                <option value="mecanica">Mecánica Automotriz</option>
+                                <option value="diesel">División Diesel</option>
+                                <option value="gasolina">División Gasolina</option>
+                                <option value="gas">División Gas</option>
+                                <option value="flotillas">Servicio para Flotillas</option>
+                            </select>
+                        </div>
+                        <div class="input-group">
+                            <i class="fa-solid fa-comment-dots" style="top: 1.5rem; transform: none;"></i>
+                            <textarea id="mensaje" placeholder="Mensaje o requerimiento especial..." rows="3"></textarea>
+                        </div>
+                        <button type="submit" class="btn-submit">Solicitar Contacto <i class="fa-solid fa-arrow-right"></i></button>
+                    </form>
+                    <div class="form-success" id="form-success" style="display: none;">
+                        <i class="fa-solid fa-circle-check"></i>
+                        <p>¡Gracias! Hemos recibido tu solicitud.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="historia" class="about-section light-section" data-aos="fade-up">
+        <div class="container about-container">
+            <div class="about-content" data-aos="fade-right" data-aos-delay="200">
+                <span class="badge">Bienvenido</span>
+                <h2>Más de 30 años de experiencia en el mercado</h2>
+                <p>Somos una empresa dedicada al mantenimiento automotriz, con servicio profesional, tecnología moderna, personal adecuado, capacitado y contamos con instalaciones eficaces.</p>
+                <div class="about-features">
+                    <div class="feature-item"><i class="fa-solid fa-check-circle"></i> Servicio Profesional</div>
+                    <div class="feature-item"><i class="fa-solid fa-microchip"></i> Tecnología Moderna</div>
+                    <div class="feature-item"><i class="fa-solid fa-user-gear"></i> Personal Capacitado</div>
+                    <div class="feature-item"><i class="fa-solid fa-warehouse"></i> Instalaciones Eficaces</div>
+                </div>
+            </div>
+            <div class="about-image" data-aos="fade-left" data-aos-delay="400" data-tilt data-tilt-max="5">
+                <img src="truck-repair.png" alt="Reparación de Camiones en Dyreauto" style="width: 100%; height: auto; border-radius: 20px; box-shadow: 0 20px 50px rgba(0,0,0,0.5);">
+            </div>
+        </div>
+    </section>
+
+    <section class="clients-section" data-aos="fade-in">
+        <div class="container">
+            <h3 class="clients-title">Flotillas y Empresas que confían en nosotros</h3>
+            <div class="clients-marquee">
+                <div class="marquee-content">
+                    <div class="client-card"><i class="fa-solid fa-bottle-water"></i> Yakult</div>
+                    <div class="client-card"><i class="fa-solid fa-house-chimney"></i> Home Depot</div>
+                    <div class="client-card"><i class="fa-solid fa-flask"></i> Bayer</div>
+                    <div class="client-card"><i class="fa-solid fa-shield-halved"></i> ADT</div>
+                    <div class="client-card"><i class="fa-solid fa-briefcase-medical"></i> IMSS</div>
+                    <div class="client-card"><i class="fa-solid fa-city"></i> Carso</div>
+                    <div class="client-card"><i class="fa-solid fa-wine-bottle"></i> Bacardí</div>
+                    <div class="client-card"><i class="fa-solid fa-fill-drip"></i> Comex</div>
+                    <div class="client-card"><i class="fa-solid fa-wifi"></i> izzi</div>
+                    <div class="client-card"><i class="fa-solid fa-car-burst"></i> MAPFRE</div>
+                    <div class="client-card"><i class="fa-solid fa-bolt"></i> CFE</div>
+                    <div class="client-card"><i class="fa-solid fa-road"></i> OHL</div>
+                    <div class="client-card"><i class="fa-solid fa-car-rear"></i> ALD Automotive</div>
+                    <div class="client-card"><i class="fa-solid fa-fire-flame-simple"></i> Engie</div>
+                    <div class="client-card"><i class="fa-solid fa-building-columns"></i> Banregio</div>
+                </div>
+                <!-- Duplicate for seamless infinite scroll -->
+                <div class="marquee-content" aria-hidden="true">
+                    <div class="client-card"><i class="fa-solid fa-bottle-water"></i> Yakult</div>
+                    <div class="client-card"><i class="fa-solid fa-house-chimney"></i> Home Depot</div>
+                    <div class="client-card"><i class="fa-solid fa-flask"></i> Bayer</div>
+                    <div class="client-card"><i class="fa-solid fa-shield-halved"></i> ADT</div>
+                    <div class="client-card"><i class="fa-solid fa-briefcase-medical"></i> IMSS</div>
+                    <div class="client-card"><i class="fa-solid fa-city"></i> Carso</div>
+                    <div class="client-card"><i class="fa-solid fa-wine-bottle"></i> Bacardí</div>
+                    <div class="client-card"><i class="fa-solid fa-fill-drip"></i> Comex</div>
+                    <div class="client-card"><i class="fa-solid fa-wifi"></i> izzi</div>
+                    <div class="client-card"><i class="fa-solid fa-car-burst"></i> MAPFRE</div>
+                    <div class="client-card"><i class="fa-solid fa-bolt"></i> CFE</div>
+                    <div class="client-card"><i class="fa-solid fa-road"></i> OHL</div>
+                    <div class="client-card"><i class="fa-solid fa-car-rear"></i> ALD Automotive</div>
+                    <div class="client-card"><i class="fa-solid fa-fire-flame-simple"></i> Engie</div>
+                    <div class="client-card"><i class="fa-solid fa-building-columns"></i> Banregio</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="servicios" class="services light-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>Nuestros Servicios</h2>
+                <p>Soluciones integrales con tecnología de punta para todo tipo de motores.</p>
+            </div>
+            
+            <div class="services-grid">
+                <!-- Servicio 1 -->
+                <div class="service-card" data-aos="fade-up" data-aos-delay="100" data-tilt data-tilt-max="10">
+                    <div class="service-icon"><i class="fa-solid fa-car-burst"></i></div>
+                    <h3>1. Mecánica Automotriz</h3>
+                    <p>Mantenimiento y reparación general de vehículos realizado por mecánicos especialistas altamente capacitados.</p>
+                </div>
+
+                <!-- Servicio 2 -->
+                <div class="service-card" data-aos="fade-up" data-aos-delay="200" data-tilt data-tilt-max="10">
+                    <div class="service-icon"><i class="fa-solid fa-truck"></i></div>
+                    <h3>2. División Diesel</h3>
+                    <ul>
+                        <li>Afinaciones</li>
+                        <li>Frenos y Suspensiones</li>
+                        <li>Motores y Diferenciales</li>
+                        <li>Equipamiento</li>
+                    </ul>
+                </div>
+
+                <!-- Servicio 3 -->
+                <div class="service-card highlight" data-aos="fade-up" data-aos-delay="300" data-tilt data-tilt-max="10">
+                    <div class="service-icon"><i class="fa-solid fa-laptop-medical"></i></div>
+                    <h3>3. Equipamiento y Diagnóstico</h3>
+                    <ul>
+                        <li>Compresores de aire</li>
+                        <li>Analizador de 5 gases</li>
+                        <li>Laboratorio de inyección</li>
+                        <li>Escáner de diagnóstico</li>
+                        <li>Rectificadora de frenos</li>
+                    </ul>
+                </div>
+
+                <!-- Servicio 4 -->
+                <div class="service-card" data-aos="fade-up" data-aos-delay="400" data-tilt data-tilt-max="10">
+                    <div class="service-icon"><i class="fa-solid fa-gas-pump"></i></div>
+                    <h3>4. División Gasolina</h3>
+                    <ul>
+                        <li>Afinaciones y Diagnósticos</li>
+                        <li>Servicio electromecánico</li>
+                        <li>Hojalatería y pintura</li>
+                        <li>Transmisiones automáticas</li>
+                    </ul>
+                </div>
+
+                <!-- Servicio 5 -->
+                <div class="service-card" data-aos="fade-up" data-aos-delay="500" data-tilt data-tilt-max="10">
+                    <div class="service-icon"><i class="fa-solid fa-fire-flame-simple"></i></div>
+                    <h3>5. División Gas</h3>
+                    <ul>
+                        <li>Conversiones y Regularizaciones</li>
+                        <li>Renovación de engomados</li>
+                        <li>Refacciones</li>
+                        <li>Servicio de mantenimiento</li>
+                    </ul>
+                </div>
+
+                <!-- Servicio 6 -->
+                <div class="service-card accent" id="flotillas" data-aos="zoom-in" data-aos-delay="600" data-tilt data-tilt-max="10" data-tilt-scale="1.05">
+                    <div class="service-icon"><i class="fa-solid fa-people-carry-box"></i></div>
+                    <h3>6. Valet para Flotillas</h3>
+                    <p>Nos hacemos cargo de tus flotillas, prográmala 12 horas antes. También atendemos emergencias 24/7.</p>
+                    <a href="#contacto" class="btn-outline">Cotizar Flotilla</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="resenas" class="testimonials" data-aos="fade-up">
+        <div class="container">
+            <div class="section-header">
+                <h2>Lo que dicen nuestros clientes</h2>
+                <p>La confianza y satisfacción son nuestro mejor respaldo.</p>
+            </div>
+            
+            <div class="carousel-container">
+                <button class="carousel-btn prev-btn"><i class="fa-solid fa-chevron-left"></i></button>
+                <div class="carousel-track-container">
+                    <ul class="carousel-track">
+                        <li class="carousel-slide current-slide">
+                            <div class="testimonial-card">
+                                <div class="stars">
+                                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                                </div>
+                                <p>"Excelente servicio, muy profesionales. Lleve mi auto por una falla que nadie encontraba y aquí lo solucionaron el mismo día. Instalaciones de primera."</p>
+                                <h4>Carlos Martínez</h4>
+                                <span>Cliente de Mecánica General</span>
+                            </div>
+                        </li>
+                        <li class="carousel-slide">
+                            <div class="testimonial-card">
+                                <div class="stars">
+                                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                                </div>
+                                <p>"Atienden las flotillas de mi empresa desde hace 3 años. Tiempos de respuesta increíbles y facturación transparente. Altamente recomendables."</p>
+                                <h4>Roberto Gómez</h4>
+                                <span>Gerente de Logística</span>
+                            </div>
+                        </li>
+                        <li class="carousel-slide">
+                            <div class="testimonial-card">
+                                <div class="stars">
+                                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                                </div>
+                                <p>"La división diesel es de las mejores de la ciudad. Equipos modernos y diagnósticos exactos. No pierdes tiempo ni dinero."</p>
+                                <h4>Ana Rodríguez</h4>
+                                <span>Transportista Independiente</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <button class="carousel-btn next-btn"><i class="fa-solid fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section" data-aos="fade-in">
+        <div class="container cta-container" data-aos="zoom-in" data-aos-delay="200">
+            <h2>¿Problemas con tu vehículo?</h2>
+            <p>No dejes que una falla te detenga. Visítanos o solicita una revisión a domicilio.</p>
+            <a href="#contacto" class="btn-primary-large">Agendar Revisión Hoy</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container footer-container">
+            <div class="footer-info">
+                <img src="dyreauto-logo.png?v=2" alt="Dyreauto" class="footer-logo">
+                <p>Tu taller de confianza con la tecnología más avanzada.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Enlaces</h4>
+                <ul>
+                    <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="#flotillas">Atención a Flotillas</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h4>Contacto</h4>
+                <p><i class="fa-solid fa-location-dot"></i> Paseo Tultitlán 14, Santiaguito, 54900 Tultitlán de Mariano Escobedo, Méx.</p>
+                <p><i class="fa-solid fa-envelope"></i> contacto@dyreauto.mx</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Dyreauto. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- AOS & VanillaTilt JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.0/vanilla-tilt.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
