@@ -921,8 +921,36 @@ footer {
         font-size: 1rem;
     }
     
+    .carousel-container {
+        position: relative;
+        padding-bottom: 4rem;
+        display: block; /* Remove flex to stop squishing */
+    }
+    
+    .carousel-btn {
+        position: absolute;
+        bottom: 0;
+        top: auto;
+        transform: none;
+        width: 40px;
+        height: 40px;
+    }
+    
+    .prev-btn {
+        left: 35%;
+    }
+    
+    .next-btn {
+        right: 35%;
+    }
+    
     .testimonial-card {
-        padding: 2rem;
+        padding: 1.5rem;
+    }
+    
+    .testimonial-card p {
+        font-size: 1rem;
+        margin-bottom: 1.5rem;
     }
     
     .cta-container h2 {
